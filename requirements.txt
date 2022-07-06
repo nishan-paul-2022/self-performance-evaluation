@@ -1,0 +1,9 @@
+Django
+dj-database-url
+dj-static
+gunicorn
+mysql-connector-python-rf
+mysqlclient
+psycopg2
+pytz
+whitenoise

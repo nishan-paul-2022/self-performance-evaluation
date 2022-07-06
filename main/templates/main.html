@@ -1,0 +1,20 @@
+    {% load static %}
+
+    <script>
+        let imonlyhuman_summary = {{ imonlyhuman_summary }};
+    </script>
+
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+    <h1 id="id02">when the light hits the sky, it's not just a call. it's a warning . . .</h1>
+
+    <button type="button"><select id="id05" onclick="get_desired_template(this.value)"></select></button>
+    <button type="button" onClick="get_desired_template('main_undergraduate_summary')">undergraduate</button>
+    <button type="button" onClick="get_desired_template('main_analysis')">analysis</button>
+    <button type="button" onClick="imonlyhuman_evaluate({{ imonlyhuman_summary }})" >imonlyhuman</button>
+    <button type="button" onClick="graph_rendering_days({{ statistics_days }})">daily</button>
+    <button type="button" onClick="graph_rendering_years({{ statistics_years }})">yearly</button>
+    <button type="button"><select id="id06" onclick="graph_rendering_years_details({{ statistics_years_details }}, this.value)"></select></button>
+
+    <div id="id03"></div>
+

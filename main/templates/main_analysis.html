@@ -1,0 +1,23 @@
+    {% load static %}
+
+    <table class="id04">
+        <tr>
+            <th>days</th>
+            <th>gone hours | total hours</th>
+            <th>average hours | target hours</th>
+            <th>grade</th>
+            <th>{{ analysis_summary.mission }} hours</th>
+        </tr>
+
+        <tr>
+            <td>{{ analysis_summary.gone_days }}</td>
+            <td>{{ analysis_summary.gone_hours }} | {{ analysis_summary.total_hours }}</td>
+            <td>{{ analysis_summary.average_hours_daily }} | {{ analysis_summary.target_hours_daily }}</td>
+            <td>{{ analysis_summary.grade }}</td>
+            <td>
+                <div>{{ analysis_summary.required1st }}</div>
+                <div>{{ analysis_summary.required2nd }}</div>
+                <div>{{ analysis_summary.required3rd }}</div>
+            </td>
+        </tr>
+    </table>

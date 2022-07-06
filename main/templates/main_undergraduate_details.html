@@ -1,0 +1,23 @@
+    {% load static %}
+
+    <table class="id04">
+        <tr>
+            <th>level</th>
+            <th>code</th>
+            <th>name</th>
+            <th>credit</th>
+            <th>grade</th>
+            <th>gpa</th>
+        </tr>
+
+        {% for row in undergraduate_details_specified %}
+            <tr>
+                <td>{{ row.level }}</td>
+                <td>{{ row.code }}</td>
+                <td>{{ row.name }}</td>
+                <td>{{ row.credit }}</td>
+                <td>{{ row.grade }}</td>
+                <td>{{ row.gpa }}</td>
+            </tr>
+        {% endfor %}
+    </table>

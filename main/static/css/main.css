@@ -1,0 +1,85 @@
+:root {
+  --font: Lucida Console,Lucida Sans Typewriter,monaco,Bitstream Vera Sans Mono,monospace;
+}
+
+#id01 {
+    background-color: #EEEEEE;
+    margin: 1%;
+}
+
+#id01 button{
+    width: 12%;
+    margin: auto 1%;
+    background-color: #04293A;
+    color: #FFFFFF;
+}
+
+@media only screen and (max-width: 960px) {
+    #id01 button{
+        width: auto;
+    }
+}
+
+#id02 {
+    font-family: var(--font);
+    font-size: 1vw;
+}
+
+#id03 {
+    font-family: var(--font);
+    margin: 2vw auto;
+}
+
+.id04 {
+    border-collapse: collapse;
+    margin: 2vw auto;
+}
+
+.id04 td, .id04 th {
+    border: 0.1vw solid #04293A;
+    padding: 0.8vw;
+    text-align: left;
+}
+
+.id04 th {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.id04 tr:nth-child(even) {background-color: rgba(71, 89, 126, 0.85);}
+.id04 tr:nth-child(odd) {background-color: rgba(71, 89, 126, 0.65);}
+.id04 tr:hover {background-color: #FFFFFF;}
+
+#id05 {
+    text-align: center;
+}
+
+#id06 {}
+
+.id07 {
+    margin: 1vw;
+}
+
+#id08 {
+    background-color: #FFFFFF;
+    border: 0.1vw solid #04293A;
+    height: 2vw;
+    margin: 0;
+    padding: 0;
+}
+
+#id09 {
+    background-color: rgba(71, 89, 126, 0.85);
+    height: 2vw;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
+    color: #000000;
+    font-size: 1vw;
+    line-height: 2vw;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+#id09:hover{background-color: #FFFFFF;}
